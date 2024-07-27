@@ -22,8 +22,8 @@ public class PersonRepository implements PersonService{
         String user = props.getProperty("user");
         String password = props.getProperty("password");
 
-        System.out.println("URL: " + url); // Verificar la URL cargada
-        System.out.println("User: " + user); // Verificar el usuario cargado
+        System.out.println("URL: " + url); 
+        System.out.println("User: " + user); 
         // N
         connection = DriverManager.getConnection(url, user, password);
         System.out.println("Conexión exitosa!");    
